@@ -1,6 +1,17 @@
- create table(
-    -> idcliente int primary key auto_increment,
-    -> nome varchar(30) not null,
-    -> email varchar(30) not null,
-    -> telefone varchar(20) not null,
-    -> dtcadastro date);
+mysql -u root
+
+create database projeto2;
+ 
+use projeto2;
+
+create table cliente(
+    idcliente int primary key auto_increment, 
+    nome varchar (30) not null,
+    email varchar (30) not null,
+    telefone varchar (30) not null,
+    dtcadastro date
+);
+
+insert into cliente values (null, 'testenome', 'teste@gmail.com', '1111-2222', '16-2-2');
+
+select * from cliente;
